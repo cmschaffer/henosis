@@ -17,8 +17,6 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: atropos
-  password: 'n3V3rm0r3&'
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -84,5 +82,4 @@ test:
 production:
   <<: *default
   database: henosis_production
-  username: postgres
-  password: <%= ENV['HENOSIS_DATABASE_PASSWORD'] %>
+
