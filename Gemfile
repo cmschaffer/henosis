@@ -10,7 +10,7 @@ gem 'jbuilder',   '2.10.0'
 gem 'bootsnap',   '1.7.2', require: false
 
 group :development, :test do
-  gem 'pg', '1.2.3'
+  gem 'sqlite3', '1.4.2'
   gem 'byebug',  '11.1.3', platforms: [:mri, :mingw, :x64_mingw]
 end
 
